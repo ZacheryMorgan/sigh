@@ -1299,7 +1299,8 @@
   /********************* End common css *********************/
   /********************* start header navbar css code *********************/
   .nav-cover_main {
-    background: #ffffff;
+    background: #003A66;
+    /* needs to be dark to pass accessibility, even though always covered with photo or teal gradient */
     z-index: 9999 !important;
   }
 
@@ -3629,7 +3630,7 @@
   /********************* End image with text css code *********************/
   /********************* start image with text css code *********************/
   .Panoramic_image_callout {
-    background: #ffffff;
+    background: #000;
     border-top: 1px solid #FCC200;
     margin-bottom: -10px;
   }
@@ -5585,7 +5586,7 @@
   /********************* Start news_and_events css code *********************/
   .news_and_events {
     border-top: 1px solid #FCC200;
-    background: #ffffff;
+    background: #008586;
     padding-top: 58px;
     padding-bottom: 58px;
     display: inline-block;
@@ -7786,9 +7787,13 @@
 
   /********************* End Learn More About the Department css code *********************/
   /********************* Start aCALENDAR css code *********************/
+  .events {
+    background: #00305A;
+  }
+
   .calendar_text_inner_main {
     padding: 118px 0 0 0;
-    background: #ffffff;
+    background: #fff;
   }
 
   .calendar_text_inner_main .calendar_text_inner .col .card .card-image picture {
@@ -9241,6 +9246,10 @@
 
   /********************* End programe text image css code *********************/
   /********************* start page footer css code *********************/
+  #footer {
+    background: #00305A;
+  }
+
   .main_footer .footer_top {
     padding: 32px 0;
   }
@@ -9645,7 +9654,7 @@
     background: url(/renderfile/9c98748fac1e00bd663033aefe3f79d5/media/images/logos/social-media/fb/facebook-white-responsive.svg) no-repeat left center;
   }
 
-  .main_footer .page-footer .social_icon a:hover .facebook {
+  .main_footer .page-footer .social_icon a:hover .facebook, .main_footer .page-footer .social_icon a:focus .facebook {
     background: url(/renderfile/9c98748fac1e00bd663033aefe3f79d5/media/images/logos/social-media/fb/facebook-gold-responsive.svg) no-repeat left center;
   }
 
@@ -9654,7 +9663,7 @@
     height: 0.95em;
   }
 
-  .main_footer .page-footer .social_icon a:hover .twitter {
+  .main_footer .page-footer .social_icon a:hover .twitter, .main_footer .page-footer .social_icon a:focus .twitter {
     background: url(/renderfile/9c98748fac1e00bd663033aefe3f79d5/media/images/logos/social-media/x/x-gold-responsive.svg) no-repeat left center;
   }
 
@@ -9662,7 +9671,7 @@
     background: url(/renderfile/9c98748fac1e00bd663033aefe3f79d5/media/images/logos/social-media/youtube/youtube-white-responsive.svg) no-repeat left center;
   }
 
-  .main_footer .page-footer .social_icon a:hover .youtube {
+  .main_footer .page-footer .social_icon a:hover .youtube, .main_footer .page-footer .social_icon a:focus .youtube {
     background: url(/renderfile/9c98748fac1e00bd663033aefe3f79d5/media/images/logos/social-media/youtube/youtube-gold-responsive.svg) no-repeat left center;
   }
 
@@ -9670,7 +9679,7 @@
     background: url(/renderfile/9c98748fac1e00bd663033aefe3f79d5/media/images/logos/social-media/instagram/instagram-white-responsive.svg) no-repeat left center;
   }
 
-  .main_footer .page-footer .social_icon a:hover .instagram {
+  .main_footer .page-footer .social_icon a:hover .instagram, .main_footer .page-footer .social_icon a:focus .instagram {
     background: url(/renderfile/9c98748fac1e00bd663033aefe3f79d5/media/images/logos/social-media/instagram/instagram-gold-responsive.svg) no-repeat left center;
   }
 
@@ -9678,7 +9687,7 @@
     background: url(/renderfile/9c98748fac1e00bd663033aefe3f79d5/media/images/logos/social-media/linkedin/linkedin-white-responsive.svg) no-repeat left center;
   }
 
-  .main_footer .page-footer .social_icon a:hover .linkedin {
+  .main_footer .page-footer .social_icon a:hover .linkedin, .main_footer .page-footer .social_icon a:focus .linkedin {
     background: url(/renderfile/9c98748fac1e00bd663033aefe3f79d5/media/images/logos/social-media/linkedin/linkedin-gold-responsive.svg) no-repeat left center;
   }
 
@@ -10370,6 +10379,7 @@
 
   .actoid_Slider_Feature .slide-box .slide .slick-list .slick-track .item .item_image {
     position: relative;
+    background: #000;
   }
 
   .actoid_Slider_Feature .slide-box .slide .slick-list .slick-track .item .item_image .item_image_text_inner {
@@ -14935,6 +14945,7 @@
     position: relative;
     z-index: 1;
     border-top: 1px solid #FCC200;
+    background: #000;
   }
 
   .cinemograph_callout_section .picture {
@@ -15150,6 +15161,8 @@
     align-items: flex-end;
     position: relative;
     overflow:hidden;
+    background: #000;
+    /*must be dark for accessibility*/
   }
 
   .fullwidthvideo video {
@@ -17113,6 +17126,7 @@
   .commo_page_banner .picture {
     position: relative;
     width:100%;
+    background: #008586;
   }
 
   .commo_page_banner .picture img {
@@ -22322,6 +22336,7 @@
     background-repeat: no-repeat;
     height: 100%;
     background-size: cover;
+    background-color: #008586;
   }
 
   .newsBlk .card {
